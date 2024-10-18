@@ -13,6 +13,11 @@
 
 """
 
-f = int(input("請輸入華氏溫度:"))
-C = (f - 32) * 5 / 9
-print(f"華氏溫度{f}F等於攝氏溫度{C}C")
+try:
+    f = float(input("請輸入華氏溫度: "))
+    c = (f - 32) * 5 / 9
+    print(f"{f}F等於攝氏溫度{c}C")
+except:
+    print("輸入錯誤!")
+else:
+    print(f"華氏溫度{f}F等於攝氏溫度{c}C")
