@@ -1,14 +1,14 @@
-# import turtle as t
+import turtle as t
 
-# t.shape("circle")
-# t.color("red")
-# for i in range(1, 1000, 2):
-#     t.stamp()
-#     t.penup()
-#     t.forward(10 + i)
-#     t.right(15)
+t.shape("star")
+t.color("yellow")
+for i in range(1, 100, 2):
+    t.stamp()
+    t.penup()
+    t.backward(10 + i)
+    t.left(15)
 
-# t.done()
+t.done()
 # print("--------------------")
 
 # import time
@@ -37,10 +37,10 @@
 
 
 # t.done() # 讓視窗不要關閉
-# print("--------------------")
-num = int(input("請輸入數字: "))
-sum = 0
-for i in range(num + 1):
-    sum = sum + i
+# num = int(input("請輸入數字: "))
+# sum = 0
+# for i in range(num + 1):
+#     sum = sum + i# print("--------------------")
+# n
 
-print(f"0到{num}的總和為{sum}")
+# print(f"0到{num}的總和為{sum}")
