@@ -2,8 +2,8 @@ import turtle as t
 import time
 
 t.speed(0)
-for j in range(61):
-    for i in range(12):
+for j in range(60):
+    for i in range(1, 13):
         t.penup()
         t.forward(100)
         t.stamp()
@@ -17,6 +17,6 @@ for j in range(61):
     t.backward(90)
     time.sleep(1)
     t.clear()
-    t.left(6 + j)
+    t.left(6 * j)
 
 t.done()
