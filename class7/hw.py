@@ -27,3 +27,35 @@ EX:
   *  
   * 
 """
+
+n = int(input("請輸入一個正整數: "))
+h = 7
+i = 1
+j = 1
+while i < n:
+    if i % 3 == 0 and i < h:
+        print(i)
+        i += 1
+    elif i % 3 != 0 and i < h:
+        i += 1
+    elif i % 3 == 0 and i >= h:
+        print(h)
+        print(i)
+        i += 1
+        h += 7
+    elif i % 3 != 0 and i >= h:
+        i += 1
+
+print("--------------------")
+
+nn = int(input("請輸入要印出的箭頭大小: "))
+k = 1
+print(((" " * nn) + ("*" * k).center(nn * (nn - k))))
+while k < nn:
+    print(((" " * nn) + ("*" * (k + (k + 1))).center(nn * (nn - 1))))
+    k += 1
+
+l = 1
+while l < nn + 1:
+    print((" " * (nn - 1) + ("*")).center(nn * (nn)))
+    l += 1
