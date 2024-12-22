@@ -52,3 +52,5 @@ while True:
     elif choice == "3":
         show_average()
         break
+    else:
+        print("查無此功能，請重新輸入")
