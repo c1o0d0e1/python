@@ -41,15 +41,6 @@ def show_average():
         print(f"總平均為{sum(score_dict.values()) / len(score_dict)}")
 
 
-def show_all():
-    if len(score_dict) == 0:
-        print("目前沒有登記成績!")
-    else:
-        for subject, score in score_dict.items():
-            print(f"{subject}: {score}")
-        print(f"總平均為{sum(score_dict.values()) / len(score_dict)}")
-
-
 while True:
     show_score()
     choice = input("請選擇功能編號: ")
@@ -59,5 +50,5 @@ while True:
     elif choice == "2":
         delete_score()
     elif choice == "3":
-        show_all()
+        show_average()
         break
