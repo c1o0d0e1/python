@@ -14,4 +14,29 @@ print(a) # 把這個變數的質硬出來
 """
 """
 
+d = {}
+while True:
+    s = input("是否要輸入新手:(請填(是)或(不是))")
+    if s == "是":
+        n = input("請輸入註冊帳號:")
+        while True:
+            try:
+                nn = int(input("請輸入密碼:"))
+            except:
+                print("請重新輸入密碼!")
+                continue
+            else:
+                d[n] = nn
+            while True:
+                nn_nn = int(input("請再一次輸入您的密碼，系統要再次當您確認。"))
+                if d[nn] == nn_nn:
+                    print(f"歡迎登入: {n}")
+                else:
+                    nn = input("是否要跟改密碼?(請填(是)或(不是))")
+                    if nn == "是":
+                        print("請輸入新密碼")
+                        nn = int(input("請輸入新密碼:"))
+                        d[n] = nn
+                    else:
+                        continue
 """
