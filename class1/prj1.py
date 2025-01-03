@@ -40,3 +40,8 @@ while True:
                     else:
                         continue
 """
+name = []
+while True:
+    add_name = input("是否要新增名字?(請填(是)或(不是))")
+    if add_name == "是":
+        name.append(add_name)
