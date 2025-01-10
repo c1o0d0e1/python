@@ -41,7 +41,24 @@ while True:
                         continue
 """
 name = []
+import random
+
+number = 1
 while True:
     add_name = input("是否要新增名字?(請填(是)或(不是))")
     if add_name == "是":
-        name.append(add_name)
+        nuw_name = input("請輸入新名字:")
+        name.append(nuw_name)
+    elif add_name == "不是":
+        name_2_0 = []
+        while number != len(name):
+            s = random.randrange(1, len(name))
+            if s in name_2_0:
+                continue
+            else:
+                print(f"{number}. {name[s]}")
+                name_2_0.append(s)
+                number += 1
+        break
+    else:
+        print("輸入錯誤，請重新輸入")
