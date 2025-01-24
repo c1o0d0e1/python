@@ -1,3 +1,2 @@
-file = open("class18/file_test.py", "w")
-file.write("print('hello world')")
-file.close()
+with open("class18/file_test.py", "r") as file:
+    print(file.read())
