@@ -17,3 +17,7 @@ int main() {
 ) -> None: ...
 print("Hello, World!")
 # Output: Hello, World!
+(function) def input(
+    prompt: object = "",
+    /
+) -> str: ...
